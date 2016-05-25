@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+    h1.
+        #{title}
+    ul
+        - each client, i in clients
+            li
+                = client.name
+                = client.clientID
+                = client.salesID
+                = client.loginName
+                = client.password
+                = client._id
+            form(action='/blobs/#{client._id}/edit',method='post',enctype='application/x-www-form-urlencoded')
+                input(type='hidden',value='DELETE',name='_method')
+                button(type='submit').
+                    Delete
+            p
+                a(href='/blobs/#{client._id}/edit') Edit
+            p
+                a(href='/blobs/#{client._id}') Show

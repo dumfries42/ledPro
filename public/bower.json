@@ -1,0 +1,23 @@
+{
+  "name": "myapp",
+  "description": "bower jason",
+  "main": "app.js",
+  "authors": [
+    "MinmingQian <a1675754@student.adelaide.edu.au>"
+  ],
+  "license": "MIT",
+  "homepage": "fofore.github.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.5",
+    "moment": "^2.13.0",
+    "vis": "^4.16.1"
+  }
+}
